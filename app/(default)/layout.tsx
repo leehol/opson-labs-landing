@@ -4,6 +4,7 @@ import BgShapes from "@/components/bg-shapes";
 import VerticalLines from "@/components/vertical-lines";
 import Header from "@/components/ui/header";
 import Footer from "@/components/ui/footer";
+import "@/app/global.css";
 
 export default function DefaultLayout({
   children,
@@ -11,12 +12,12 @@ export default function DefaultLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={"flex flex-col justify-center items-center h-screen"}>
+    <div className={"flex flex-col h-screen overflow-y-auto"}>
       {/*<VerticalLines />*/}
       {/*<BgShapes />*/}
       {/*<Header />*/}
 
-      <main className="grow">{children}</main>
+      <main className="grow w-full">{children}</main>
 
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/public/images/logo.png";
+import Logo from "@/public/images/logos/opson.png";
 
 export default function Footer() {
   return (
@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center py-8">
-            <p className="text-sm text-gray-700 dark:text-gray-400">
-              © 2024 Opson Labs - an AI product studio
+            <p className="text-sm">
+              <Link href="/"><span className="font-normal">© 2024 opson labs - an AI studio</span></Link>
               <a
                 className="font-medium text-indigo-500 hover:underline"
                 href="https://twitter.com/pacovitiello"
