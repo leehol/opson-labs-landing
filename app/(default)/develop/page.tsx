@@ -39,8 +39,8 @@ const partners = [
     name: "Y Combinator",
     image: YCombinatorLogo,
     url: "https://www.ycombinator.com/",
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
   },
   {
     name: "OpenAI",
@@ -70,22 +70,20 @@ const partners = [
     name: "Shell",
     image: ShellLogo,
     url: "https://www.shell.com/",
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
   },
   {
     name: "Susa",
     image: SusaLogo,
     url: "https://www.susaventures.com/",
-    width: 48,
-    height: 48,
   },
   {
     name: "Vector",
     image: VectorLogo,
     url: "https://www.vector.co/",
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
   },
   {
     name: "Spark",
@@ -96,15 +94,15 @@ const partners = [
     name: "Spice",
     image: SpiceLogo,
     url: "https://spice.ai",
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
   },
   {
     name: "GFC",
     image: GfcLogo,
     url: "https://www.globalfounderscapital.com/",
-    width: 48,
-    height: 48,
+    width: 40,
+    height: 40,
   },
   {
     name: "BCG X",
@@ -120,8 +118,6 @@ const partners = [
     name: "Cruise",
     image: CruiseLogo,
     url: "https://www.getcruise.com/",
-    width: 48,
-    height: 48,
   },
 ]
 
@@ -131,7 +127,7 @@ export default function DevelopPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((current) => (current + 1) % partners.length);
-    }, 3000); // Rotate every 3 seconds
+    }, 1500); // Rotate every 1.5 seconds
     
     return () => clearInterval(interval);
   }, []);
@@ -155,11 +151,11 @@ export default function DevelopPage() {
         </div>
       </div>
 
-      <div className="flex flex-row gap-16">
-        <Card className="w-full max-w-md border border-muted-foreground/40 shadow-xs">
-            <CardHeader className="text-center pb-2 pt-4">
+      <div className="flex flex-col lg:flex-row gap-4 lg:gap-16">
+        <Card className="w-full lg:max-w-md border border-muted-foreground/40 shadow-xs">
+            <CardHeader className="pb-2 pt-4">
             <CardTitle className="text-xl font-bold">"Around the clock" plan</CardTitle>
-            <div className="mt-4 flex items-baseline justify-center">
+            <div className="mt-4 flex flex-col lg:flex-row items-baseline">
                 <span className="text-4xl font-extrabold tracking-tight">$8,000</span>
                 <span className="ml-1 text-xl text-muted-foreground">/ engineer / month</span>
             </div>
@@ -206,11 +202,11 @@ export default function DevelopPage() {
                   return (
                     <div 
                       key={`${partner.name}`}
-                      className="absolute transition-all duration-700 ease-in-out"
+                      className="absolute transition-all duration-800 ease-in-out"
                       style={{
                         left: `${20 * position}%`,
                         transform: 'translateX(-0%)',
-                        opacity: position === 0 || position === 4 ? 0.6 : 1.0
+                        opacity: position === 0 || position === 4 ? 0.5 : 0.8
                       }}
                     >
                       <a href={partner.url} target="_blank" rel="noopener noreferrer">
