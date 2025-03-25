@@ -65,6 +65,8 @@ const partners = [
     name: "Box",
     image: BoxLogo,
     url: "https://www.boxgroup.com/",
+    width: 40,
+    height: 40,
   },
   {
     name: "Shell",
@@ -135,7 +137,7 @@ export default function DevelopPage() {
   // Helper function to get visible partners
   const getVisiblePartners = () => {
     const visiblePartners = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 4; i++) {
       const index = (activeIndex + i) % partners.length;
       visiblePartners.push(partners[index]);
     }
@@ -143,7 +145,7 @@ export default function DevelopPage() {
   };
   
   return (
-    <div className="container mx-auto p-8 flex flex-col items-center gap-16">
+    <div className="container mx-auto py-8 px-4 flex flex-col items-center gap-16">
       <div className="text-center flex flex-col gap-2">
         <div className="w-full flex flex-row items-center justify-center gap-2">
             <Image src={OpsonLogo} alt="Opson Logo" width={14} height={14} />
@@ -156,7 +158,7 @@ export default function DevelopPage() {
             <CardHeader className="pb-2 pt-4">
             <CardTitle className="text-xl font-bold">"Around the clock" plan</CardTitle>
             <div className="mt-4 flex flex-col lg:flex-row items-baseline">
-                <span className="text-4xl font-extrabold tracking-tight">$8,000</span>
+                <span className="text-4xl font-extrabold tracking-tight">$9,000</span>
                 <span className="ml-1 text-xl text-muted-foreground">/ engineer / month</span>
             </div>
             <CardDescription className="mt-4 text-base">Full-service software development at your disposal</CardDescription>
@@ -197,14 +199,14 @@ export default function DevelopPage() {
                   const position = (index - activeIndex + partners.length) % partners.length;
                   
                   // Only render if it's one of the 4 visible positions (0-3)
-                  if (position > 4) return null;
+                  if (position > 3) return null;
                   
                   return (
                     <div 
                       key={`${partner.name}`}
                       className="absolute transition-all duration-800 ease-in-out"
                       style={{
-                        left: `${20 * position}%`,
+                        left: `${25 * position}%`,
                         transform: 'translateX(-0%)',
                         opacity: position === 0 || position === 4 ? 0.5 : 0.8
                       }}

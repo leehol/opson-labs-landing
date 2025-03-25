@@ -17,7 +17,7 @@ export default function DefaultLayout({
       {/*<BgShapes />*/}
       {/*<Header />*/}
 
-      <main className="grow w-full">{children}</main>
+      <main className="grow w-full flex">{children}</main>
 
       <Footer />
     </div>
