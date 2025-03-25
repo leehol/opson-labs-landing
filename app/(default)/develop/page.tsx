@@ -158,7 +158,7 @@ export default function DevelopPage() {
             <CardHeader className="pb-2 pt-4">
             <CardTitle className="text-xl font-bold">"Around the clock" plan</CardTitle>
             <div className="mt-4 flex flex-col lg:flex-row items-baseline">
-                <span className="text-4xl font-extrabold tracking-tight">$9,000</span>
+                <span className="text-4xl font-extrabold tracking-tight">$8,500</span>
                 <span className="ml-1 text-xl text-muted-foreground">/ engineer / month</span>
             </div>
             <CardDescription className="mt-4 text-base">Full-service software development at your disposal</CardDescription>
