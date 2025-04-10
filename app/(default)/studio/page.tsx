@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import VofoLogo from "@/public/images/logos/vofo.png";
 import OpsonLogo from "@/public/images/logos/opson.png";
+import EngagedLogo from "@/public/images/logos/engaged.png";
+
 const apps = [
   {
     name: "Vofo",
@@ -11,10 +13,9 @@ const apps = [
     url: "https://vofo.dev",
   },
   {
-    name: "Opson",
-    logo: <Image src={OpsonLogo} alt="Opson Logo" width={24} height={24} />,
-    url: "https://opson.ai",
-    extra: "coming soon"
+    name: "Engaged",
+    logo: <Image src={EngagedLogo} alt="Engaged Logo" width={120} height={120} />,
+    url: "https://engaged.dev",
   },
   {
     name: "Opson",
