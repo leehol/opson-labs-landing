@@ -17,8 +17,8 @@ const inter_tight = Inter_Tight({
 });
 
 export const metadata = {
-  title: "opson labs - an AI studio",
-  description: "opson labs is an AI studio that builds AI products and tools for the future of enterprise",
+  title: "Opson Labs",
+  description: "Opson Labs is an AI studio that builds AI products and tools for the future of enterprise",
 };
 
 export default function RootLayout({

@@ -14,7 +14,7 @@ export default function Home() {
       <div className="px-4 sm:px-6 flex flex-row items-center justify-center w-full">
         <div className={"flex flex-row items-center gap-3"}>
           <Image src={OpsonLogo} alt={"opson-logo"} width={15} height={15} />
-          <p>opson labs</p>
+          <p>Opson Labs</p>
         </div>
       </div>
       <div className="flex flex-row items-center justify-center w-full gap-4">

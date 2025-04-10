@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center py-8">
             <p className="text-sm">
-              <Link href="/"><span className="font-normal">© 2024 opson labs - an AI studio</span></Link>
+              <Link href="/"><span className="font-normal">© 2024 Opson Labs</span></Link>
               <a
                 className="font-medium text-indigo-500 hover:underline"
                 href="https://twitter.com/pacovitiello"
