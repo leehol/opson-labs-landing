@@ -157,10 +157,10 @@ export default function DevelopPage() {
         <Card className="w-full lg:max-w-md border border-muted-foreground/40 shadow-xs">
             <CardHeader className="pb-2 pt-4">
             <CardTitle className="text-xl font-bold">"Around the clock" plan</CardTitle>
-            <div className="mt-4 flex flex-col lg:flex-row items-baseline">
+            {/* <div className="mt-4 flex flex-col lg:flex-row items-baseline">
                 <span className="text-4xl font-extrabold tracking-tight">$10,500</span>
                 <span className="ml-1 text-xl text-muted-foreground">/ engineer / month</span>
-            </div>
+            </div> */}
             <CardDescription className="mt-4 text-base">Full-service software development at your disposal</CardDescription>
             </CardHeader>
             <CardContent className="pb-4">
@@ -181,7 +181,7 @@ export default function DevelopPage() {
             </CardContent>
             <CardFooter className="flex justify-center pb-2">
             <Button size="lg" className="w-full" onClick={() => window.open("https://cal.com/opson-ai/15min", "_blank")}>
-                Get Started
+                Contact us
             </Button>
             </CardFooter>
         </Card>
