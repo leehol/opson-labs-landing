@@ -19,8 +19,8 @@ export default function Home() {
       </div>
       <div className="flex flex-row items-center justify-center w-full gap-4">
         <div className="flex flex-row items-center justify-center gap-12">
-          <Link href="/studio"><p className="font-normal">studio</p></Link>
-          <Link href="/develop"><p className="font-normal">develop</p></Link>
+          {/* <Link href="/studio"><p className="font-normal">studio</p></Link>
+          <Link href="/develop"><p className="font-normal">develop</p></Link> */}
         </div>
       </div>
     </div>
